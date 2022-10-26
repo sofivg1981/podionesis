@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <span class="fs-5 fw-semibold">Podi One</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <!-- iNICIO -->
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+              Inicio
+            </button>
+            <div class="collapse" id="home-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                    <div class="dropdown">
+                      <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Perfil       
+                      </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Informacion del usuario</a></li>
+                          <li><a class="dropdown-item" href="#">Mis Preferencias</a></li>
+                        </ul>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- uSUARIOS -->
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Usuarios
+            </button>
+            <div class="collapse" id="dashboard-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Estudiantes       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Información del estudiante</a></li>
+                      <li><a class="dropdown-item" href="#">Imprimir información del estudiante</a></li>
+                      <li><a class="dropdown-item" href="#">Agregar Estudiante</a></li>
+                      <li><a class="dropdown-item" href="#">Importar Estudiantes</a></li>
+                      <li><a class="dropdown-item" href="#">Asignar información en conjunto</a></li>                      
+                      <li><a class="dropdown-item" href="#">Campos del Estudiante</a></li>
+                    </ul>
+              </div></li>
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Padres       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Crear Usuario Padre</a></li>
+                      <li><a class="dropdown-item" href="#">Importar padres</a></li>
+                      <li><a class="dropdown-item" href="#">Asociar padre con estudiante</a></li>
+                      <li><a class="dropdown-item" href="#">Inscripción</a></li>
+                    </ul>
+              </div></li>
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuarios       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Agregar usuario</a></li>
+                      <li><a class="dropdown-item" href="#">Importar usuarios</a></li>
+                      <li><a class="dropdown-item" href="#">Perfiles de usuarios</a></li>
+                      <li><a class="dropdown-item" href="#">Permisos de usuarios</a></li>
+                      <li><a class="dropdown-item" href="#">Campos de usuarios</a></li>
+                    </ul>
+              </div></li>
+                
+              </ul>
+            </div>
+          </li>
+         
+
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Académico-collapse" aria-expanded="false">
+              Académico
+            </button>
+            <div class="collapse" id="Académico-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                    <div class="dropdown">
+                      <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Horarios       
+                      </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Horarios Estudiante</a></li>
+                          <li><a class="dropdown-item" href="#">Horarios Docente</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Calificaciones       
+                    </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ingresar calificaciones finales</a></li>
+                        <li><a class="dropdown-item" href="#">Ingresar calificaciones del libro</a></li>
+                        <li><a class="dropdown-item" href="#">Crear calificaciones para varias clases (tareas)</a></li>
+                        <li><a class="dropdown-item" href="#">Calificaciones con anomalias</a></li>
+                        <li><a class="dropdown-item" href="#">Control docente</a></li>
+                        <li><a class="dropdown-item" href="#">Analisis de las calificaciones</a></li>
+                        <li class="border-top my-3"></li>
+                        <li><a class="dropdown-item" href="#">Boletín de calificaciones</a></li>
+                        <li><a class="dropdown-item" href="#">Calificaciones de los estudiantes</a></li>
+                        <li><a class="dropdown-item" href="#">Reportes de progreso</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Asistencia       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Administración</a></li>
+                      <li><a class="dropdown-item" href="#">Agregar ausencias</a></li>
+                      <li><a class="dropdown-item" href="#">Recalcular asistencia</a></li>
+                      <li><a class="dropdown-item" href="#">Eliminar asistencia duplicada</a></li>
+                      <li><a class="dropdown-item" href="#">Códigos de asistencia</a></li>
+                      <li class="border-top my-3"></li>
+                      <li><a class="dropdown-item" href="#">Asistencia diaria promedio</a></li>
+                      <li><a class="dropdown-item" href="#">Gráfico de asistencia</a></li>
+                      <li><a class="dropdown-item" href="#">Resumen de la asistencia</a></li>
+                      
+                    </ul>
+                </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Disciplina       
+                </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sanciones</a></li>
+                    <li><a class="dropdown-item" href="#">Agregar Sanción</a></li>
+                    <li class="border-top my-3"></li>
+                    <li><a class="dropdown-item" href="#">Formulario de disciplina</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis de las categorias</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis de las categorias sobre el tiempo</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis por campo de Estudiante</a></li>
+                    <li><a class="dropdown-item" href="#">Historial disciplinario</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Actividades       
+              </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pantalla Estudiante</a></li>
+                  <li><a class="dropdown-item" href="#">Actividades</a></li>
+                  <li><a class="dropdown-item" href="#">Agregar Actividad</a></li>
+                  <li><a class="dropdown-item" href="#">Lista de estudiantes</a></li>
+                  <li><a class="dropdown-item" href="#">Control docente</a></li>
+
+                </ul>
+            </div>
+        </li>
+        
+              </ul>
+            </div>
+          </li>
+
+          
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Reportes-collapse" aria-expanded="false">
+              Reportes
+            </button>
+            <div class="collapse" id="Reportes-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                    <div class="dropdown">
+                      <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Horarios       
+                      </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Horarios Estudiante</a></li>
+                          <li><a class="dropdown-item" href="#">Horarios Docente</a></li>
+                          <li><a class="dropdown-item" href="#">Reporte Horarios</a></li>
+                          <li><a class="dropdown-item" href="#">Reporte Solicitudes</a></li>                        
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Calificaciones       
+                    </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Boletín de calificaciones</a></li>
+                        <li><a class="dropdown-item" href="#">Calificaciones de los estudiantes</a></li>
+                        <li><a class="dropdown-item" href="#">Reportes de progreso</a></li>
+                        <li><a class="dropdown-item" href="#">Control docente</a></li>
+                        <li><a class="dropdown-item" href="#">Analisis de las calificaciones</a></li>
+                        <li><a class="dropdown-item" href="#">Analisis del estudiante</a></li>
+                        <li><a class="dropdown-item" href="#">Cuadro de honor</a></li>
+                        <li><a class="dropdown-item" href="#">Expedientes académicos</a></li>
+                        <li><a class="dropdown-item" href="#">Lista de promedio/puesto en clase</a></li>
+                        
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Asistencia       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Asistencia diaria promedio</a></li>
+                      <li><a class="dropdown-item" href="#">Gráfico de asistencia</a></li>
+                      <li><a class="dropdown-item" href="#">Resumen de la asistencia</a></li>
+                                            
+                    </ul>
+                </div>
+              </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Disciplina       
+                </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Análisis de las categorias</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis de las categorias sobre el tiempo</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis por campo de Estudiante</a></li>
+                    <li><a class="dropdown-item" href="#">Historial disciplinario</a></li>
+                  </ul>
+              </div>
+          </li>
+          
+          <li>
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Actividades       
+              </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Lista de estudiantes</a></li>
+                  <li><a class="dropdown-item" href="#">Control docente</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Imprimir       
+            </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Información del estudiante</a></li>
+                <li><a class="dropdown-item" href="#">Listas de Clases</a></li>
+                <li><a class="dropdown-item" href="#">Fotos de clases</a></li>
+                <li><a class="dropdown-item" href="#">Cartas</a></li>
+                <li><a class="dropdown-item" href="#">Etiquetas</a></li>
+
+              </ul>
+          </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="btn btn  ms-4" type="button" aria-expanded="false">
+            Añadidos/Retiros       
+          </button>
+            
+        </div>
+      </li>
+              </ul>
+            </div>
+          </li>
+
+          
+          <!-- Configuración -->
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              Configuración
+            </button>
+            <div class="collapse" id="orders-collapse" style="">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Institución       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Copiar Institución</a></li>
+                      <li><a class="dropdown-item" href="#">Transferir</a></li>
+                      <li><a class="dropdown-item" href="#">Campos Institución</a></li>
+                      <li><a class="dropdown-item" href="#">Configuración?</a></li>
+                    </ul>
+              </div></li>
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Académico       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Inscripción</a></li>
+                      <li><a class="dropdown-item" href="#">Periodos</a></li>
+                      <li><a class="dropdown-item" href="#">Códigos de matricula</a></li>
+                      <li><a class="dropdown-item" href="#">Horas</a></li>
+                      <li><a class="dropdown-item" href="#">Grados</a></li>
+                      <li><a class="dropdown-item" href="#">Cursos/Materias</a></li>
+                      <li><a class="dropdown-item" href="#">Tareas para varias clases</a></li>
+                    </ul>
+              </div></li>
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Asociar/retirar estudiante a/de clase       
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Solicitudes individuales</a></li>
+                      <li><a class="dropdown-item" href="#">Asignar varias solicitudes</a></li>
+                      <li><a class="dropdown-item" href="#">Programar en grupos</a></li>
+                      <li><a class="dropdown-item" href="#">Correr Programador</a></li>
+                      <li><a class="dropdown-item" href="#">Retirar estudiante de clase</a></li>
+                    </ul>
+              </div></li>
+              
+                <li><div class="dropdown">
+                  <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Escalas      
+                  </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Escalas</a></li>                     
+                    </ul>
+                  </div></li>
+                  <li><div class="dropdown">
+                    <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Comentarios     
+                    </button>
+                      <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Comentarios Genéricos</a></li>
+                      <li><a class="dropdown-item" href="#">Códigos de Comentarios</a></li>
+                      </ul>
+                    </div></li>
+                    <li><div class="dropdown">
+                      <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Históricos     
+                      </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Periodos Historicos</a></li>
+                          <li><a class="dropdown-item" href="#">Calificaciones históricas</a></li>
+                        </ul>
+                      </div></li>
+                      <li><div class="dropdown">
+                        <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Seguridad      
+                        </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Registro de acceso</a></li>
+                            <li><a class="dropdown-item" href="#">Back up base de datos</a></li>
+                            <li><a class="dropdown-item" href="#">Quitar acceso</a></li>
+                          </ul>
+                        </div></li>
+                        
+              </ul>
+            </div>
+
+            
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Administración-collapse" aria-expanded="false">
+                Administración
+              </button>
+              <div class="collapse" id="Administración-collapse" style="">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><div class="dropdown">
+                    <button class="btn btn dropdown-toggle ms-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contabilidad       
+                    </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ingresos</a></li>
+                        <li><a class="dropdown-item" href="#">Gastos</a></li>
+                        <li><a class="dropdown-item" href="#">Salarios</a></li>
+                        <li><a class="dropdown-item" href="#">Pagos del personal</a></li>
+                        <li class="border-top my-3"></li>
+                        <li><a class="dropdown-item" href="#">Transacciones diarias</a></li>                      
+                        <li><a class="dropdown-item" href="#">Saldos del personal</a></li>
+                        <li><a class="dropdown-item" href="#">Imprimir extractos</a></li>
+                      </ul>
+                </div></li>
+                  <li><div class="dropdown">
+                    <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cobros       
+                    </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cobros</a></li>
+                        <li><a class="dropdown-item" href="#">Pagos</a></li>
+                        <li><a class="dropdown-item" href="#">Asignar cobros a varios</a></li>
+                        <li><a class="dropdown-item" href="#">Asignar pagos a varios</a></li>
+                        <li class="border-top my-3"></li>
+                        <li><a class="dropdown-item" href="#">Transacciones diarias</a></li>                      
+                        <li><a class="dropdown-item" href="#">Saldos del estudiante</a></li>
+                        <li><a class="dropdown-item" href="#">Imprimir extractos</a></li>
+                      </ul>
+                </div></li>
+                  <li><div class="dropdown">
+                    <button class="btn btn dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicio de comida       
+                    </button>
+                      <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Ménus del día</a></li>
+                        <li><a class="dropdown-item" href="#">Elementos de la comida</a></li>
+                        <li><a class="dropdown-item" href="#">Comidas</a></li>
+                        <li class="border-top my-3"></li>
+                        <li><a class="dropdown-item" href="#">Extractos</a></li>
+                        <li><a class="dropdown-item" href="#">Transacciones</a></li>
+                      </ul>
+                </div></li>
+                  
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Comunicación-collapse" aria-expanded="false">
+                Comunicación
+              </button>
+              <div class="collapse" id="Comunicación-collapse" style="">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                      <div class="dropdown">
+                        <button class="btn btn ms-4" type="button"  aria-expanded="false">
+                          Notas del portal       
+                        </button>
+
+                      </div>
+                  </li>
+                  <li>
+                    <div class="dropdown">
+                      <button class="btn btn ms-4" type="button"  aria-expanded="false">
+                        Encuestas      
+                      </button>
+
+                    </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn ms-4" type="button"  aria-expanded="false">
+                      Mensajería       
+                    </button>
+
+                  </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn ms-4" type="button"  aria-expanded="false">
+                    SMS       
+                  </button>
+
+                </div>
+            </li>
+                </ul>
+              </div>
+            </li>
+          
+           <!-- Account -->
+
+      
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      
+    </body>
+</html>
